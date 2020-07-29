@@ -14,7 +14,6 @@ namespace Simple.Data.Access.Test
     {
         protected DatabaseHelper _helper;
 
-        [TestFixtureSetUp]
         public void TestFixtureSetup()
         {
             _helper = new DatabaseHelper(AccessDatabaseType.Access2003);

@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Simple.Data, Version=0.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Simple.Data.Core.0.19.0.0\lib\net40\Simple.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data.Ado, Version=0.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Simple.Data.Ado.0.19.0.0\lib\net40\Simple.Data.Ado.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
@@ -68,16 +74,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\dependencies\Simple.Data\Simple.Data.Ado\Simple.Data.Ado.csproj">
-      <Project>{ECC2D7DB-EC7F-44B6-B09F-5B471C629685}</Project>
-      <Name>Simple.Data.Ado</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\dependencies\Simple.Data\Simple.Data\Simple.Data.csproj">
-      <Project>{148CEE80-2E84-4ABD-B5AB-20415B2BBD21}</Project>
-      <Name>Simple.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

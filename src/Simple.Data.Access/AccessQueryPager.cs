@@ -28,12 +28,12 @@ namespace Simple.Data.Access
             {
                 Match match = ColumnExtract.Match(sql);
                 string columns = match.Groups[1].Value.Trim();
-                sql += " ORDER BY " + columns.Split(',').First().Trim();
+                sql += " ORDER BY " + columns.Split(',')[0].Trim();
             }
 
             yield return string.Format("{0} OFFSET {1} ROWS FETCH NEXT {2} ROWS ONLY", sql, skip, take);
         }
 
-        #endregion
+        #endregion IQueryPager Members
     }
 }

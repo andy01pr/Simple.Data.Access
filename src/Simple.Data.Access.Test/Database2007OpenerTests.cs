@@ -9,7 +9,6 @@ namespace Simple.Data.Access.Test
     [TestFixture]
     public class Database2007OpenerTests : BaseTests
     {
-        [TestFixtureSetUp]
         public new void TestFixtureSetup()
         {
             _helper = new DatabaseHelper(AccessDatabaseType.Access2007);
